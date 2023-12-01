@@ -10,3 +10,7 @@ def a_hi(name):
 
 def say_hi():
     print("hi from a module")
+
+
+if __name__ == "__main__":
+    print("This is being run as an app")
