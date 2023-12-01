@@ -11,7 +11,7 @@ mod1_a.say_hi()
 say_hi()
 
 
-print("Calling other moethods")
+print("Calling other methods")
 top_module.top_hi("my_example")
 mod1_a.a_announcement()
 b_hi()
