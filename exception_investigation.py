@@ -5,6 +5,8 @@
 # In this case, the file and custom exception class are both called 'MyException'
 from my_exceptions.MyException import MyException
 
+from my_exceptions.DetailedException import DetailedException
+
 def function_that_can_have_exception(left, right):
     try:
         i_left = int(left)
@@ -36,3 +38,21 @@ def only_lowercase(str_message):
 
 str_message = input("Enter a lower case string: ")
 only_lowercase(str_message)
+
+
+def only_even(num_arg):
+    """ Now a function that raises a custom Exception """
+    try:
+        num = int(num_arg)
+    except:
+        raise DetailedException("Could not convert input to integer", -10)
+
+    if num % 2 == 0:
+        print("Great")
+    else:
+        print("Input is not even!")
+        raise DetailedException("Number is not even", -20)
+
+
+even_num = input("Enter an even number: ")
+only_even(even_num)
