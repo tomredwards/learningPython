@@ -5,3 +5,6 @@ class Apple:
 
     def speak(self):
         print("I am an apple... I do not talk")
+
+    def shape(self):
+        return "Circle"
