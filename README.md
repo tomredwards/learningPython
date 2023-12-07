@@ -21,5 +21,6 @@ deactivate
 ## Install packages
 
 ```commandline
-pip install numpy
+pip3 install numpy
+pip3 install pyyaml
 ```
