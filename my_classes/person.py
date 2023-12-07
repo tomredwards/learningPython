@@ -10,10 +10,12 @@ class Person:
         self._name = name
         self._age = age
 
+    # Define a property.  This is essentially the "getter"
     @property
     def age(self):
         return self._age
 
+    # Now for the property that was created, set the "setter"
     @age.setter
     def age(self, new_age):
         print("\t\tI am in the age setter!")
