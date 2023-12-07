@@ -36,4 +36,20 @@ int_var = 10
 float_var = 99.99
 logging.debug("Multiple arguments: %s %i %f", name, int_var, float_var) # note you can use %s for all types it seems
 
+# Capture Errors and stack traces:
+a = 5
+b = 0
+try:
+    c = a / b
+except Exception as e:
+    logging.error("Exception occurred", exc_info=True)
+
+# This should be the same as above
+try:
+    c2 = a / b
+except Exception as e:
+    logging.exception("Exception occurred")
+
+    
+
 logging.debug("Done logging_playing script")
